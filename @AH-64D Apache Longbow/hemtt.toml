@@ -1,0 +1,17 @@
+name = "AH-64D Official Project"
+prefix = ""
+author = "Franze, Nodunit, Voodooflies, Keplager, mattysmith22, BradMick, Rosd6 & Community"
+files = [
+    "*.paa",
+    "mod.cpp"
+]
+
+keyname = "{{prefix}}_{{version}}"
+signame = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
+
+releasebuild = [
+    "@zip ace3_{{semver.major}}.{{semver.minor}}.{{semver.patch}}"
+]
+
+[header_exts]
+version= "{{git \"id 8\"}}"
